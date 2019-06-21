@@ -15,5 +15,4 @@ class Backer
     @backed_projects << project
     self.each{|name| Project.add_backer(backer)}
   end
-  end
 end
