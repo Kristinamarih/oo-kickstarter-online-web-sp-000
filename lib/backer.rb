@@ -13,7 +13,7 @@ class Backer
   
   def back_project(project)
     @backed_projects << project
-    self.name.each do {|name| Project.add_backer(backer)}
+    self.each do {|name| Project.add_backer(backer)}
   end
   end
 end
